@@ -50,8 +50,6 @@
   </div>
 </template>
 
-<!-- The rest of the code remains unchanged -->
-
 
 <script>
 import { RouterLink, RouterView } from 'vue-router';
@@ -75,7 +73,7 @@ export default {
           ingredient: ['chocolat', 'beurre', 'farine'],
           difficulty: 'low',
           Picture: null,
-          pictureUrl: 'https://www.cyberpunk.net/build/images/social-thumbnail-en-ddcf4d23.jpg'
+          pictureUrl: 'https://empreintesucree.fr/wp-content/uploads/2020/05/1-tarte-chocolat-recette-empreinte-sucree-1.jpg'
         },
         {
           id: 2,
@@ -83,7 +81,7 @@ export default {
           ingredient: ['pomme', 'beurre', 'farine'],
           difficulty: 'low',
           Picture: null,
-          pictureUrl: 'https://www.cyberpunk.net/build/images/social-thumbnail-en-ddcf4d23.jpg'
+          pictureUrl: 'https://static.750g.com/images/1200-675/a96d46e59b4f0ab8169c7cb0cb932a84/la-cuisson.jpg'
         },
       ],
       userConnected: false,
@@ -134,105 +132,90 @@ export default {
 </script>
 
 <style>
-  body {
-    background-color: rgba(255, 210, 210, 0.751);
-  }
-  .HeaderB {
-  background-color: #f7d488;
-  color: #3f3f3f;
+body {
+  background-color: #f4f4f4; /* Light gray background */
+  font-family: 'Roboto', sans-serif; /* Use a Google Font for a modern look */
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.HeaderB {
+  background-color: #ff6f61; /* Marmiton's red color */
+  color: white;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-  .boxx {
-    background-color: rgba(132, 132, 132, 0.245);
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  .image-container {
-    text-align: center;
-    margin: 20px 0;
-  }
-  .recipe-image {
-    max-width: 100%;
-    height: auto;
-  }
-  .button-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .logo {
-   width: 40px;
-  }
-  .update-button,
-  .add-button {
-    border-radius: 12%;
-    background-color: orangered;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    font-size: 15px;
-    padding: 6px 12px;
-    margin-right: 10px;
-    color: white;
-  }
-  .contact-list {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  .contact-list li {
-    list-style: none;
-    margin-right: 20px;
-  }
 
-  /* Media Queries */
-  @media only screen and (max-width: 600px) {
-    h1 {
-      font-size: 24px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
+.boxx {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  @media only screen and (min-width: 600px) {
-    h1 {
-      font-size: 28px;
-    }
-    p {
-      font-size: 18px;
-    }
-  }
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
 
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 32px;
-    }
-    p {
-      font-size: 20px;
-    }
-  }
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  @media only screen and (min-width: 992px) {
-    h1 {
-      font-size: 36px;
-    }
-    p {
-      font-size: 22px;
-    }
-  }
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  @media only screen and (min-width: 1200px) {
-    h1 {
-      font-size: 40px;
-    }
-    p {
-      font-size: 24px;
-    }
-  }
+.update-button,
+.add-button {
+  border-radius: 8px;
+  background-color: #009688; /* Marmiton's green color */
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button:hover,
+.add-button:hover {
+  background-color: #00796b; /* Darker green on hover */
+}
+
+footer {
+  background-color: #2c3e50; /* Dark blue for the footer */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.contact-list li {
+  list-style: none;
+  margin-right: 20px;
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
@@ -242,6 +225,7 @@ export default {
   width: 40px;
   height: auto;
   margin: 10px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -273,5 +257,4 @@ export default {
     width: 70px;
   }
 }
-
 </style>

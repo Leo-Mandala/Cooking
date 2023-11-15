@@ -35,3 +35,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+button {
+  border-radius: 8px;
+  background-color: #009688; /* Marmiton's green color */
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+</style>
